@@ -1,0 +1,8 @@
+# Apple
+.DS_Store
+# Python
+*.pyc
+**/__pycache__
+# Settings/workspace
+.pylintrc
+**/.vscode
