@@ -1,9 +1,9 @@
-lda     20,00
+lda     20
 mov     b,a
-lda     21,00
+lda     21
 mov     c,a
-lda     22,00
-add     000
-add     001
-sta     30,00
+lda     22
+add     a,b
+add     a,c
+sta     30
 hlt
