@@ -57,7 +57,10 @@ def dm(pq):
       >>> dm(pq)
       >>> pq == original
       True
+
     """
+
+    pq.data.pop()
 
 
 def priority(val):
@@ -68,3 +71,4 @@ def priority(val):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+
