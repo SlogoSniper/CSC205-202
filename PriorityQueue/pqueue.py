@@ -88,11 +88,11 @@ def dm(pq):
       >>> insert(2, pq)
       >>> dm(pq)
       >>> printPQ(pq)
-      [5,4,7]
+      [4, 5, 7]
 
     """
 
-    pq.data.pop()
+    pq.data.pop(0)
 
 
 def priority(val):
