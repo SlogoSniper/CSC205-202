@@ -12,6 +12,10 @@ class PQ:
 
     def size(self):
         return len(self.data)
+    
+    def isEmpty(self):
+        return self.size() == 0
+            
 
 def printPQ(pq):
     return(pq.data)
@@ -37,8 +41,21 @@ def insert(val, pq):
       >>> insert(4, pq)
       >>> printPQ(pq)
       [4, 7]
+
     """
+    sorted = False
+    pos = -1
     pq.data.append(val)
+    
+    if pq.size() != 1:
+
+        while pq.data[0] != pq.data[pos]:
+            if pq.data[pos] < pq.data[pos - 1]:
+                pq.data[pos], pq.data[pos - 1] = pq.data[pos - 1], pq.data[pos]
+                pos -= 1
+            else:
+                sorted = True
+
 
 
 def min(pq):
@@ -77,4 +94,5 @@ def priority(val):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+
 
