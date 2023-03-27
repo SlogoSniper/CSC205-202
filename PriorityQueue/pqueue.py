@@ -13,6 +13,9 @@ class PQ:
     def size(self):
         return len(self.data)
 
+def printPQ(pq):
+    return(pq.data)
+
 
 def new():
     """
@@ -31,6 +34,9 @@ def insert(val, pq):
       >>> insert(7, pq)
       >>> pq.size()
       1
+      >>> insert(4, pq)
+      >>> printPQ(pq)
+      [4, 7]
     """
     pq.data.append(val)
 
