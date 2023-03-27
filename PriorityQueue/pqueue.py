@@ -97,6 +97,13 @@ def dm(pq):
 
 def priority(val):
     """
+      >>> pq = new()
+      >>> insert(7, pq)
+      >>> insert(4, pq)
+      >>> insert(5, pq)
+      >>> insert(2, pq)
+      >>> priority(5)
+      3
     """
 
 
