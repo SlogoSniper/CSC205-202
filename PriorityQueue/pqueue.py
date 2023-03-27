@@ -73,7 +73,7 @@ def min(pq):
       >>> insert(2, pq)
       >>> min(pq)
       2
-      
+
 
     """
     return pq.data[0]
@@ -81,16 +81,14 @@ def min(pq):
 
 def dm(pq):
     """
-      >>> original = new()
       >>> pq = new()
-      >>> pq == original
-      True
       >>> insert(7, pq)
-      >>> pq == original
-      False
+      >>> insert(4, pq)
+      >>> insert(5, pq)
+      >>> insert(2, pq)
       >>> dm(pq)
-      >>> pq == original
-      True
+      >>> printPQ(pq)
+      [5,4,7]
 
     """
 
