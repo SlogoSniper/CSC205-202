@@ -41,9 +41,15 @@ def insert(val, pq):
       >>> insert(4, pq)
       >>> printPQ(pq)
       [4, 7]
+      >>> insert(5, pq)
+      >>> printPQ(pq)
+      [4, 5, 7]
+      >>> insert(2, pq)
+      >>> printPQ(pq)
+      [2, 4, 5, 7]
 
     """
-    sorted = False
+
     pos = -1
     pq.data.append(val)
     
@@ -54,7 +60,7 @@ def insert(val, pq):
                 pq.data[pos], pq.data[pos - 1] = pq.data[pos - 1], pq.data[pos]
                 pos -= 1
             else:
-                sorted = True
+                break
 
 
 
@@ -62,8 +68,13 @@ def min(pq):
     """
       >>> pq = new()
       >>> insert(7, pq)
+      >>> insert(4, pq)
+      >>> insert(5, pq)
+      >>> insert(2, pq)
       >>> min(pq)
-      7
+      2
+      
+
     """
     return pq.data[0]
 
