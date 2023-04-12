@@ -1,1 +1,1 @@
-# CSC205
+# CSC205 and CSC202
