@@ -6,3 +6,5 @@
 # Settings/workspace
 .pylintrc
 **/.vscode
+# C++
+out/
