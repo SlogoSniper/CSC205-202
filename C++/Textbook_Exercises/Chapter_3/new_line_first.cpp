@@ -3,7 +3,13 @@
 #include <math.h>
 using namespace std;
 
-/*Will not compile due to the newLine function coming after main*/
+// File will not compile with newLine being defined after main
+// Compiles and runs if newLine is before main
+
+void newLine()
+{
+    cout << endl;
+}
 
 int main()
 {
@@ -13,7 +19,3 @@ int main()
     return 0;
 }
 
-void newLine()
-{
-    cout << endl;
-}
