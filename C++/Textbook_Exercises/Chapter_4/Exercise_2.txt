@@ -1,0 +1,8 @@
+Stack diagram for n_lines() with n:4
+
+Main
+n:4
+n:3
+n:2
+n:1
+n:0

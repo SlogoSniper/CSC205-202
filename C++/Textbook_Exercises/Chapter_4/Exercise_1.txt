@@ -1,0 +1,2 @@
+If you run the countdown function that uses recursion when passing a negative number, then the function will run infinitely counting down 
+into negative numbers and will only stop once it reaches a run time error. 
